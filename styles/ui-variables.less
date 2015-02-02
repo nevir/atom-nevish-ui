@@ -1,5 +1,17 @@
 @import '../vendor/nevish/less/palette';
 
+// Nevish Variables
+///////////////////
+
+@font-family-heading: 'News Cycle', 'Lucida Grande', 'Segoe UI', sans-serif;
+
+@base-accent-color:          @nevish-palette-neutral-complement;
+@button-text-color-selected: @nevish-palette-foreground-primary;
+
+// Tabs, tree view items, etc.
+@item-height:         24px;
+@item-indicator-size: 2px;
+
 // Base Atom Variables
 //////////////////////
 
@@ -8,7 +20,7 @@
 @text-color:           @nevish-palette-foreground;
 @text-color-subtle:    @nevish-palette-foreground-dark2;
 @text-color-highlight: @nevish-palette-foreground-light2;
-@text-color-selected:  @nevish-palette-foreground-primary;
+@text-color-selected:  @nevish-palette-foreground-complement;
 
 @text-color-info:    @nevish-palette-foreground-info;
 @text-color-success: @nevish-palette-foreground-success;
@@ -52,10 +64,10 @@
 @button-background-color-hover:    darken(@nevish-palette-neutral-primary, 10%);
 @button-background-color-selected: @nevish-palette-neutral-primary;
 @button-border-color:              @nevish-palette-background-light2;
-@tab-bar-background-color:         magenta;
-@tab-bar-border-color:             magenta;
-@tab-background-color:             magenta;
-@tab-background-color-active:      magenta;
+@tab-bar-background-color:         @nevish-palette-background-dark1;
+@tab-bar-border-color:             @nevish-palette-background-light2;
+@tab-background-color:             @nevish-palette-background-dark1;
+@tab-background-color-active:      @nevish-palette-background;
 @tab-border-color:                 magenta;
 
 @tree-view-background-color: magenta;
@@ -77,7 +89,7 @@
 @component-icon-padding: 5px;
 @component-icon-size:    16px;
 @component-line-height:  25px;
-@tab-height:             30px;
+@tab-height:             @item-height;
 @font-size:              14px;
 
 // Misc
@@ -92,7 +104,3 @@
 @scrollbar-background-color: transparent;
 @scrollbar-background-color: @nevish-palette-background-dark1;
 @scrollbar-color:            @nevish-palette-background-light2;
-
-@font-family-heading: 'News Cycle', 'Lucida Grande', 'Segoe UI', sans-serif;
-
-@focus-color: @nevish-palette-neutral-complement;
