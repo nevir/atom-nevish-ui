@@ -1,0 +1,99 @@
+@import 'ui-mixins';
+@import 'ui-variables';
+
+html, body, atom-workspace {
+  font-family: @font-family;
+  font-size:   @font-size;
+}
+
+// text-*
+
+.text-smaller    { .text(smaller);   }
+.text-normal     { .text(normal);    }
+.text-subtle     { .text(subtle);    }
+.text-highlight  { .text(highlight); }
+.text-info       { .text(info);      }
+.text-success    { .text(success);   }
+.text-warning    { .text(warning);   }
+.text-error      { .text(error);     }
+.text-heading    { .text(heading);   }
+
+// TODO: Bug with default theme?
+.text-info:hover    { .text(info);    }
+.text-success:hover { .text(success); }
+.text-warning:hover { .text(warning); }
+
+// highlight-*
+
+.highlight-info    { .highlight(info)    }
+.highlight-success { .highlight(success) }
+.highlight-warning { .highlight(warning) }
+.highlight-error   { .highlight(error)   }
+
+// Standard Elements
+
+h1, h2, h3, h4, h5, h6 {
+  .text-heading;
+}
+h1 { font-size: 2.5em  !important; }
+h2 { font-size: 2.0em  !important; }
+h3 { font-size: 1.75em !important; }
+h4 { font-size: 1.5em  !important; }
+h5 { font-size: 1.25em !important; }
+h6 { font-size: 1.0em  !important; }
+
+p {
+  line-height:   1.45;
+  margin-bottom: 1em;
+}
+
+label {
+  font-weight: normal;
+  color:       @nevish-palette-foreground-primary;
+}
+
+pre {
+  background-color: @inset-panel-background-color;
+  color:            @text-color;
+  border-radius:    @component-border-radius;
+  border:           1px solid @inset-panel-border-color;
+  margin:           0;
+}
+
+
+// code {
+//   .text(highlight);
+//   background: @background-color-highlight;
+//   border-radius: @component-border-radius;
+// }
+//
+// .selected { .text(highlight); }
+
+//
+// .highlight {
+//   color: @text-color-highlight;
+//   font-weight: bold;
+//   text-shadow: none;
+//   background-color: @background-color-highlight;
+//   border-radius: @component-border-radius;
+//   padding: 1px 3px;
+// }
+//
+// .highlight-color(@name, @color, @text-color) {
+//   .highlight-@{name} {
+//     color: lighten(saturate(@text-color, 0%), 30%);
+//     font-weight: bold;
+//     text-shadow: none;
+//     background-color: fadeout(@color, 60%);
+//     border-radius: @component-border-radius;
+//     padding: 1px 3px;
+//   }
+// }
+// .highlight-color(info, @background-color-info, @text-color-info);
+// .highlight-color(warning, @background-color-warning, @text-color-warning);
+// .highlight-color(error, @background-color-error, @text-color-error);
+// .highlight-color(success, @background-color-success, @text-color-success);
+
+// .results-view .path-details.list-item {
+//   color: darken(@text-color-highlight, 18%);
+// }

@@ -1,0 +1,3 @@
+[submodule "vendor/nevish"]
+	path = vendor/nevish
+	url = https://github.com/nevir/nevish
