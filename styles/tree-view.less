@@ -6,7 +6,15 @@
     line-height: @item-height;
   }
 
-  .selected:before {
-    border-right: @item-indicator-size solid @base-accent-color;
+  .selected {
+    &:before {
+      border-right: @item-indicator-size solid @base-accent-color;
+    }
+
+    > .name {
+      color: @text-color-selected;
+    }
   }
+
+
 }

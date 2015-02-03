@@ -1,5 +1,5 @@
 {
-  "name": "nevish-ui",
+  "name": "atom-nevish-ui",
   "theme": "ui",
   "version": "0.0.0",
   "description": "Nevish",
@@ -7,5 +7,12 @@
   "repository": "https://github.com/nevir/atom-nevish-ui",
   "engines": {
     "atom": "> 0.40.0"
+  },
+  "dependencies": {
+    "chroma-js": "^0.6.3",
+    "lodash": "^3.0.1"
+  },
+  "scripts": {
+    "postinstall": "apm install nevish"
   }
 }
