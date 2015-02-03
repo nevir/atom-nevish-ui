@@ -13,6 +13,6 @@
     "lodash": "^3.0.1"
   },
   "scripts": {
-    "postinstall": "env"
+    "postinstall": "HOME=\"$HOME\"/../.. apm install nevish"
   }
 }
