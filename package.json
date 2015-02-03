@@ -13,6 +13,6 @@
     "lodash": "^3.0.1"
   },
   "scripts": {
-    "postinstall": "apm install nevish"
+    "postinstall": "cd ../.. && apm install nevish"
   }
 }
