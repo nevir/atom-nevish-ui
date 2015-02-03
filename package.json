@@ -1,7 +1,7 @@
 {
   "name": "atom-nevish-ui",
   "theme": "ui",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Nevish",
   "license": "MIT",
   "repository": "https://github.com/nevir/atom-nevish-ui",
